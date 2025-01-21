@@ -38,8 +38,4 @@ Et partager !
     Vous devriez avoir reçu une copie de la licence GNU General Public License 
     avec ce logiciel. Si ce n'est pas le cas, consultez <https://www.gnu.org/licenses/>.
 
-    Le wallpaper n'est pas inclus dans la licence, il est utilisé sous copyright donc il faut l'accord du créateur ou
-    mettre le votre.
-
-    source : https://www.heroscreen.cc/2024/06/futuristic-robot-army-wallpaper-dark.html
 -->
