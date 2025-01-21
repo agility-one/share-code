@@ -15,6 +15,6 @@ Mise en place :
 
 3) penser à changer l'url dans submit_content.php pour votre url de site
 
-4) Configurez un Cron Job pour exécuter cleanup.php toutes les 24 heures pour supprimer les .txt
+4) Configurez un Cron Job pour exécuter cleanup.php toutes les 24 heures pour supprimer les .txt ou mode manuel (au choix)
 
 Et partager !
