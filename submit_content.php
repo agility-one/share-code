@@ -24,8 +24,8 @@
         $file_path = "content/" . $code . ".txt";
         file_put_contents($file_path, $content);
         
-        /* pensez à changer url pour votre ip ou domaine avant /share-code/page.php?code=$code\ */
-        echo "<p>Lien généré à partager : <a href=\"http://127.0.0.1:8000/share-code/page.php?code=$code\">http://127.0.0.1:8000/share-code/page.php?code=$code</a></p>";
+        /* pensez à changer url pour votre ip ou domaine avant /page.php?code=$code\ */
+        echo "<p>Lien généré à partager : <a href=\"http://127.0.0.1/page.php?code=$code\">http://127.0.0.1/page.php?code=$code</a></p>";
         ?>
     </div>
 </body>
