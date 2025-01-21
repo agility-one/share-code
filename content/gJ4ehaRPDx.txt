@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Sécurisée</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333333;
+        }
+        td {
+            background-color: #1f1f1f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carte Sécurisée</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+        </thead>
+        <tbody id="cardBody"></tbody>
+    </table>
+
+    <script>
+        const rows = 8;
+        const columns = 8;
+        
+        function generateRandomCode() {
+            return Math.floor(10000000 + Math.random() * 90000000); // 8-digit code
+        }
+
+        function createCard() {
+            const cardBody = document.getElementById('cardBody');
+            for (let row = 0; row < rows; row++) {
+                const tr = document.createElement('tr');
+                const th = document.createElement('th');
+                th.textContent = String.fromCharCode(65 + row); // A, B, C, D, E, F, G, H
+                tr.appendChild(th);
+                for (let col = 0; col < columns; col++) {
+                    const td = document.createElement('td');
+                    td.textContent = generateRandomCode();
+                    tr.appendChild(td);
+                }
+                cardBody.appendChild(tr);
+            }
+        }
+
+        createCard();
+    </script>
+</body>
+</html>
